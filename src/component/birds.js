@@ -5,9 +5,9 @@ function Birds() {
     const [visible, setVisible] = useState(false);
     return(
         <div>
-            <div style={{height:"70px",textAlign:"center",lineHeight:"70px", fontWeight:"bold"}}>Birds Pictures</div>
+            <div style={{height:"70px",textAlign:"center",lineHeight:"70px", fontWeight:"bold", fontSize:"30px"}}>Birds Pictures</div>
             <div style={{display:"flex", flexWrap:"wrap", width:"100%", padding:"10px"}}>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -16,7 +16,7 @@ function Birds() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -25,7 +25,7 @@ function Birds() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -34,7 +34,7 @@ function Birds() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -43,7 +43,7 @@ function Birds() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -52,7 +52,7 @@ function Birds() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -61,7 +61,7 @@ function Birds() {
                     />
                     
                 </div>
-                <div style={{ display: 'none' }}>
+                <div style={{ display: 'none' }} className='test'>
                         <Image.PreviewGroup preview={{ visible, onVisibleChange: (vis) => setVisible(vis) }}>
                         <Image src="https://th.bing.com/th/id/OIP.ptwKO_DARqumRU_ejvDVdwHaFx?w=261&h=203&c=7&r=0&o=5&dpr=1.1&pid=1.7" />
                         <Image src="https://th.bing.com/th/id/OIP.J6GuD4jdhoMhOs9BbZf0DQHaFj?w=271&h=203&c=7&r=0&o=5&dpr=1.1&pid=1.7" />

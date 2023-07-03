@@ -5,9 +5,9 @@ function Beaches() {
     const [visible, setVisible] = useState(false);
     return(
         <div>
-            <div style={{height:"70px",textAlign:"center",lineHeight:"70px", fontWeight:"bold"}}>Beaches Pictures</div>
+            <div style={{height:"70px",textAlign:"center",lineHeight:"70px", fontWeight:"bold", fontSize:"30px"}}>Beaches Pictures</div>
             <div style={{display:"flex", flexWrap:"wrap", width:"100%", padding:"10px"}}>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -16,7 +16,7 @@ function Beaches() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -25,7 +25,7 @@ function Beaches() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -34,7 +34,7 @@ function Beaches() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -43,7 +43,7 @@ function Beaches() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -52,7 +52,7 @@ function Beaches() {
                     />
                     
                 </div>
-                <div style={{padding:"7px"}}>
+                <div style={{padding:"7px"}} className='test'>
                     <Image
                         preview={{ visible: false }}
                         width={100}
@@ -61,7 +61,7 @@ function Beaches() {
                     />
                     
                 </div>
-                <div style={{ display: 'none' }}>
+                <div style={{ display: 'none' }} className='test'>
                         <Image.PreviewGroup preview={{ visible, onVisibleChange: (vis) => setVisible(vis) }}>
                         <Image src="https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp" />
                         <Image src="https://gw.alipayobjects.com/zos/antfincdn/cV16ZqzMjW/photo-1473091540282-9b846e7965e3.webp" />

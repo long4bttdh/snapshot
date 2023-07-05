@@ -1,27 +1,3 @@
-// import React, {useState, useEffect} from "react"
-// import axios from "axios";
-
-// const Home = () => {
-//     const [mountain, setMoutain] = useState([]);
-//     useEffect(()=>{
-//         loadMountain();
-//     },[]);
-// const loadMountain = async () =>{
-//     const result = await axios.get("http://localhost:3000/mountain");
-//     setMoutain(result.data);
-// }
-// return (
-//     <div>
-//         <tbody>
-//             {mountain.map((Mountain)=>{
-                
-//             })}
-//         </tbody>
-//     </div>
-// )
-// }
-
-
 
 
 let tbody= document.getElementsByClassName("img")

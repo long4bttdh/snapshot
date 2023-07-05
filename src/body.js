@@ -1,13 +1,12 @@
 import React,{ useState } from 'react';
 import { Input,Button, Space,Image} from 'antd'
-import Mountain from './component/moutains';
-import Beaches from './component/beaches';
-import Birds from './component/birds';
-import Food from './component/food';
+import Content from "./component/Content"
+
 
 function Body() {
-    const [visible, setVisible] = useState(false);
-    const [content,setContent] = useState(<Mountain handleClick={(item)=>{setContent(item)}}/>)
+    
+    const [content,setContent] = useState("Mountain Pictures")
+    const Main = Content(content)
     return(
         <div style={{width:"70%",margin:"auto" }}>
             <div style={{height:"50px", textAlign:"center",fontFamily:" Fantasy", fontSize:"24px" }}>SnapShot</div>
@@ -15,19 +14,20 @@ function Body() {
             <div style={{height:"50px",textAlign:"center" }}>
             <Space direction="vertical">
                 <Space wrap>
-                    <Button onClick={({key})=>{setContent(<Mountain handleClick={(item)=>{setContent(item)}}/>)}}
+                    <Button onClick={()=>{setContent("Mountain Pictures")}}
                          style={{backgroundColor:"black"}} type="primary">Mountain</Button>
-                    <Button onClick={({key})=>{setContent(<Beaches handleClick={(item)=>{setContent(item)}}/>)}}
+                    <Button onClick={()=>{setContent("Beaches Pictures")}}
                          style={{backgroundColor:"black"}} type="primary">Beaches</Button>
-                    <Button onClick={({key})=>{setContent(<Birds handleClick={(item)=>{setContent(item)}}/>)}}
+                    <Button onClick={()=>{setContent("Birds Pictures")}}
                          style={{backgroundColor:"black"}} type="primary">Birds</Button>
-                    <Button onClick={({key})=>{setContent(<Food handleClick={(item)=>{setContent(item)}}/>)}}
+                    <Button onClick={()=>{setContent("Food Pictures")}}
                          style={{backgroundColor:"black"}} type="primary">Food</Button>
                 </Space>
             </Space>
             </div>
+            {Main}
             
-            {content}
+            
             
         </div>
         

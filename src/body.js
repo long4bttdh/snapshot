@@ -5,7 +5,7 @@ import Content from "./component/Content"
 
 function Body() {
     
-    const [content,setContent] = useState("Mountain Pictures")
+    const [content,setContent] = useState("Mountains")
     const Main = Content(content)
     return(
         <div style={{width:"70%",margin:"auto" }}>
@@ -14,13 +14,13 @@ function Body() {
             <div style={{height:"50px",textAlign:"center" }}>
             <Space direction="vertical">
                 <Space wrap>
-                    <Button onClick={()=>{setContent("Mountain Pictures")}}
-                         style={{backgroundColor:"black"}} type="primary">Mountain</Button>
-                    <Button onClick={()=>{setContent("Beaches Pictures")}}
+                    <Button onClick={()=>{setContent("Mountains")}}
+                         style={{backgroundColor:"black"}} type="primary">Mountains</Button>
+                    <Button onClick={()=>{setContent("Beaches")}}
                          style={{backgroundColor:"black"}} type="primary">Beaches</Button>
-                    <Button onClick={()=>{setContent("Birds Pictures")}}
+                    <Button onClick={()=>{setContent("Birds")}}
                          style={{backgroundColor:"black"}} type="primary">Birds</Button>
-                    <Button onClick={()=>{setContent("Food Pictures")}}
+                    <Button onClick={()=>{setContent("Food")}}
                          style={{backgroundColor:"black"}} type="primary">Food</Button>
                 </Space>
             </Space>
